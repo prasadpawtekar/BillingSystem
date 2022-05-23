@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="@dimen/common_margin"
+    android:layout_marginVertical="@dimen/small_margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding">
+
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <TextView
+            android:text="@string/label_bill_no"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_label_bill_no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/label_date_time"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_label_date_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_bill_no"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/label_customer_id"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_label_customer_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_date_time"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/label_name"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_label_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_customer_id"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/label_total_bill"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_label_total_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_name"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="@string/label_bill_no"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_bill_no"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/label_date_time"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_date_time"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toBottomOf="@id/tv_bill_no"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/label_customer_id"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_customer_id"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toBottomOf="@id/tv_date_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/label_name"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_name"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toBottomOf="@id/tv_customer_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/label_total_bill"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:id="@+id/tv_total_amount"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

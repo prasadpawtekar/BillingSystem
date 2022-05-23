@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">A-Billing</string>
+    <string name="btn_manage_products">Manage Products</string>
+    <string name="btn_new_bill">New Bill</string>
+    <string name="btn_manage_customers">Manage Customers</string>
+    <string name="hint_customer_name">Customer Name</string>
+    <string name="et_mobile_no">Mobile Number</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_show">Show</string>
+    <string name="hint_product_name">Product name</string>
+    <string name="hint_price">Price</string>
+    <string name="activity_title_customers">Customers</string>
+    <string name="label_selected_customer">SELECTED CUSTOMER</string>
+    <string name="menu_item_add">Add</string>
+    <string name="activity_title_new_bill">New Bill</string>
+    <string name="activity_title_products">Products</string>
+    <string name="activity_title_add_product">Add product</string>
+    <string name="activity_title_add_customer">Add Customer</string>
+    <string name="menu_item_checkout">Checkout</string>
+    <string name="label_bill_no">Bill No.</string>
+    <string name="label_date_time">Date and Time</string>
+    <string name="label_customer_id">Customer Id</string>
+    <string name="label_name">Name</string>
+    <string name="label_total_bill">Total Bill Amount</string>
+    <string name="btn_all_bills">All bills</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:paddingStart="@dimen/small_padding"
+    android:paddingEnd="@dimen/small_padding"
+    android:paddingTop="@dimen/small_padding"
+    tools:context=".activities.BillingActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/customer_view"
+        android:layout_marginVertical="@dimen/common_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/small_margin"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:gravity="center_horizontal"
+                android:text="@string/label_selected_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:drawableStart="@drawable/ic_customer"
+                tools:text="Customer name here"
+                android:id="@+id/tv_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:drawableStart="@drawable/ic_mobile"
+                tools:text="Mobile No. : 797987987"
+                android:id="@+id/tv_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_total_bill_amount"
+        android:textColor="@color/red"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="Total bill amount = 7893"
+        android:gravity="end"
+        android:background="@color/white"
+        android:padding="@dimen/common_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/small_margin"
+        android:id="@+id/rv_sell_items"
+        tools:listitem="@layout/view_holder_sales_details"
+        app:layout_constraintTop_toBottomOf="@id/customer_view"
+        app:layout_constraintBottom_toTopOf="@id/tv_total_bill_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
